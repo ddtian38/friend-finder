@@ -13,6 +13,7 @@ function apiCall(method, data){
         displayFriend(res);
     })
 }
+
 function validate(){
     for(var x = 1; x <= 10; x++){
         if($("#q"+x).val() === null){
@@ -29,7 +30,7 @@ function validate(){
 
 function clear(){
     $("#name").val("");
-    $("#profile-pic").val();
+    $("#profile-pic").val("");
     for(var x = 1; x <= 10; x++){
         $("#q"+x).val(null)
     }
