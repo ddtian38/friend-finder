@@ -45,6 +45,38 @@ let friends = [{
         3,
         1
       ]
+  },
+  {
+    "name": "Leory Jethro Gibbs",
+    "photo":"https://wwwimage-secure.cbsstatic.com/thumbnails/photos/770xh/gibbs-rules-32.jpg",
+    "scores":[
+        3,
+        5,
+        4,
+        2,
+        3,
+        2,
+        4,
+        1,
+        3,
+        1
+      ]
+  },
+  {
+    "name": "Connor",
+    "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrAIvTxvWXtbr787p2k0UC8JPV0_bL2HwV2b9-BCjSticTlEEU",
+    "scores":[
+        4,
+        2,
+        1,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1,
+        5
+      ]
   }
 ]
 
