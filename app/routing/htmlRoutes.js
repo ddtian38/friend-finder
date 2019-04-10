@@ -1,5 +1,5 @@
-const express = require("../server.js").express;
-const path = require("../server.js").path;
+const express = require("../../server.js").express;
+const path = require("../../server.js").path;
 
 const router = express.Router()
 

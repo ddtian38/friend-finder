@@ -1,4 +1,4 @@
-const express = require("../server.js").express;
+const express = require("../../server.js").express;
 let friends = require("../data/friends.js")
 
 const router = express.Router();
@@ -27,12 +27,14 @@ router.post("/api/friends", function(req, res){
     for(var j = 0; j < req.body.scores.length; j++){
       newDiff += Math.abs(req.body.scores[j] - friends[i].scores[j])
     }
-    
+    console.log(newDiff);
+
     if(newDiff < baseDiff){
       baseDiff = newDiff;
       matchInd = i;
-      newDiff = 0;
+     
     }
+    newDiff = 0;
   }
 
   res.send(friends[matchInd])

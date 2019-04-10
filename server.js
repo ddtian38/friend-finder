@@ -10,12 +10,14 @@ module.exports = {
 const PORT = process.env.PORT || 3000;
 
 var app = express();
-app.use(express.static('public'))
+//starting at the root
+app.use(express.static('app/public'))
+//client data sent from client is parsed
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-app.use("/", require('./routing/apiRoutes.js'))
-app.use("/", require('./routing/htmlRoutes.js'))
+//Calling html and API routes
+app.use("/", require('./app/routing/apiRoutes.js'))
+app.use("/", require('./app/routing/htmlRoutes.js'))
 
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);

@@ -43,7 +43,7 @@ $("#submitBtn").on("click", function(event){
     if(validate()){
         var scores = []
         for(var x = 1; x <= 10; x++){
-            scores.push($("#q"+x).val())
+            scores.push(parseInt($("#q"+x).val()))
         }
 
         var input = {
